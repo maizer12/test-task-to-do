@@ -1,30 +1,30 @@
-# React + TypeScript + Vite
+Tasks Component
+The TasksComponent is an interface for managing a list of tasks. It allows users to add new tasks, mark them as completed or uncompleted, delete tasks, and filter them based on their completion status.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Functionality
 
-Currently, two official plugins are available:
+Adding a new task:
+Users can input a new task in the text field and click the "Add Task" button. The new task will be added to the task list.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Marking a task as completed/uncompleted:
+Users can click on a task in the list to mark it as completed or uncompleted.
 
-## Expanding the ESLint configuration
+Deleting a task:
+Users can delete a task by clicking the "Delete" button next to the task in the list.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Filtering tasks:
+Users can select the "All", "Completed", or "Current" tab to display all tasks, completed tasks, or uncompleted tasks, respectively.
 
-- Configure the top-level `parserOptions` property like this:
+Maximum length warning:
+If users input a task that exceeds 80 characters, a warning will be displayed.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+Technologies Used
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+React
+Material-UI for styling interface components
+Redux for managing application state
+
+Installation and Running Instructions
+Install all dependencies by running npm install.
+Run the application using npm start.
+
